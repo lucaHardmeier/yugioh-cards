@@ -27,8 +27,6 @@ async function getPokemon(pokeUrl) {
   return { id, name, types, img, attack, defense };
 }
 
-getPokemons();
-
 function displayPokemons(pokemons) {
   const template = document.querySelector("#pokemon-card");
   const cardContainer = document.querySelector("#cards-container");
@@ -80,3 +78,5 @@ function renderChart(labels, arrAtks, arrDefs) {
   const myChart = document.getElementById("myChart");
   new Chart(myChart, config);
 }
+
+getPokemons();

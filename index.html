@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1>Yu-gi-oh</h1>
+      <h1>Pokemons</h1>
 
       <div>
         <div>
@@ -23,18 +24,17 @@
       </div>
 
       <div id="cards-container"></div>
+
+      <canvas id="myChart"></canvas>
     </div>
 
-    <template id="yugioh-card">
+    <template id="pokemon-card">
       <div class="card-container">
         <img src="" alt="" />
         <div class="card-content">
           <h4 class="card-title"></h4>
-          <p class="card-description"></p>
-          <div class="atk-def-container">
-            <h5 class="atk"></h5>
-            <h5 class="def"></h5>
-          </div>
+          <p class="poke-id"></p>
+          <div class="poke-types"></div>
         </div>
       </div>
     </template>
